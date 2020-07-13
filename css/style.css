@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text: #283136;
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url(../fonts/web/robotomedium.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 2476px;
+  color: black;
+  background-repeat: no-repeat;
+  background-position: top;
+  /*background-image: url(../images/preview/nerds.jpg);*/
+}
+/*почему я не могу нормальную обертку сделать  c фоном? */
+.hero-wrapper {
+  background-color: red;
+  height: 538px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  width: 440px;
+}
+
+.main-nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px 0;
+  width: 440px;
+  padding-top: 15px;
+}
+
+li {
+  list-style-type: none;
+} 
+
+.main-nav-menu-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: PTSans;
+  font-size: 16px;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  width: 115px;
+  cursor: pointer;
+}
+
+.container .btn-basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  font-family: PTSans, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 80px;
+  width: 1160px;
+  min-height: 420px;
+}
+
+.description-left {
+  width: 400px;
+}
+
+.description-left .text-bold {
+  display: block;
+  padding-top: 76px;
+  font-size: 55px;
+  font-family: PTSans, sans-serif;
+  line-height: 55px;
+  font-weight: lighter;
+}
+
+.description-left p {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-family: PTSans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: var(--main-text);
+}
+
+.description .image-slide {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.btn-info {
+  display: inline-block;
+  padding: 18px 55px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+  border-radius: 2px;
+  border-width: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 1100px;
+}
+
+.features-item {
+  width: 300px;
+  line-height: 0;
+}
+
+.features-item img {
+  width: 300px;
+  height: 146px;
+}
+
+.features-item .features-title {
+  margin-top: 47px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: PTSans, sans-serif;
+}
+
+.features-item p {
+  margin-top: 30px;
+  font-family: PTSans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: #5d6367;
+}
+
+.features-btn {
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 160px;
+  border-radius: 4%;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.features-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: PTSans, sans-serif;
+  color: white;
+}
+
+.btn-red {
+  background-color: #fb565a;
+}
+
+.btn-green {
+  background-color: #00ca74;
+}
+
+.btn-yellow {
+  background-color: #efc84a;
+}
+
+.advantages {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.advantages-left {
+  width: 660px;
+}
+
+.advantages-left h3 {
+  margin-bottom: 35px;
+  margin-top: 30px;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: PTSans, sans-serif;
+}
+.advantages-left p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  color: #283136;
+}
+
+.advantages-left .text-bold {
+  display: block;
+  padding-top: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  text-transform: uppercase;
+}
+
+.advantages-left .advantages-list {
+  padding-left: 0;
+}
+
+.advantages-left .advantages-items {
+  position: relative;
+  display: block;
+  margin-top: 24px;
+  margin-left: 36px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  color: #283136;
+}
+
+.advantages-left li::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -35px;
+  width: 4%;
+  height: 1px;
+  background-color: red;
+}
+
+.advantages-right {
+  width: 360px;
+}
+
+.advantages-right b {
+  display: inline-block;
+  margin-left: 18px;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.stats-content {
+  width: 120px;
+}
+.stats b {
+  margin-top: 40px;
+  margin-left: 0;
+  padding: 0;
+  font-size: 45px;
+}
+
+.stats p {
+  margin-top: 20px;
+  font-family: PTSans, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #5d6367;
+}
+.stats sup {
+  font-size: 25px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 80px;
+  padding-bottom: 45px;
+  width: 1160px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logos-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+}
+.logos-img-wrap::after {
+  position: absolute;
+  content: "";
+  background-color: #eeeeee;
+  width: 2px;
+  height: 52px;
+  bottom: center;
+  right: 0;
+}
+.logos-img-wrap:last-child::after {
+  position: absolute;
+  content: "";
+  width: 0;
+}
+
+.map {
+  margin: 0 auto;
+  width: 1440px;
+  min-height: 420px;
+  background-image: url(/images/map.png);
+}
+
+.map .container {
+  border: 1px solid red;
+}
+
+.contacts {
+  width: 320px;
+  margin-top: 55px;
+  padding-top: 50px;
+  background-color: white;
+}
+.contacts .text-bold {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: PTSans, sans-serif;
+  text-transform: uppercase;
+}
+.contacts .adress-link  {
+  font-family: PTSans,sans-serif;
+  text-decoration: none;
+  color: #666666;
+}
+
+
