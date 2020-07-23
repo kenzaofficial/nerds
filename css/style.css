@@ -18,7 +18,7 @@ body {
   color: black;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url(../images/previeыw/nerds.jpg);*/
+  background-image: url(../images/preview/nerds.jpg);*/
 }
 
 .hero-wrapper {
@@ -127,7 +127,7 @@ li {
   margin-top: 10px;
 }
 
-.btn-info {
+.container-btn {
   display: inline-block;
   padding: 18px 55px;
   text-align: center;
@@ -349,7 +349,9 @@ li {
   max-width: 1440px;
   width: 100%;
   min-height: 420px;
-  background-image: url(/images/map.png);
+  background: 
+  url(../images/map.png) 0 0 no-repeat, 
+  url(../images/map-marker.png) /*как выставить дабл фон чтобы я увидел этот маркер?*/
 }
 
 .map .container {
@@ -357,10 +359,14 @@ li {
 }
 
 .contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   max-width: 320px;
   width: 100%;
   margin-top: 55px;
   padding-top: 50px;
+  padding-bottom: 45px;
   background-color: white;
 }
 
@@ -380,8 +386,36 @@ li {
   cursor: pointer;
 }
 
-.btn-write-us {
-  margin: 0 auto;/*почему не сработала центровка?*/
+.container-btn-flex {
+  margin: 0 auto;
 }
+
+.footer-content {
+  margin-top: 50px;
+  width: 960px;
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  width: 100%;
+  border: 2px solid green;
+}
+/* как сделать идеально ровные круги соотвествтующие макету ? я не хочу подбирать на глаз*/
+.footer-social-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  padding: 30px;
+  border: 3px solid red;
+  border-radius: 50%;
+  
+ 
+  
+}
+
 
 
