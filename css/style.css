@@ -38,6 +38,10 @@ body {
   padding-top: 50px;
 }
 
+.main-header__logo:hover {
+  opacity: 80%;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -54,6 +58,7 @@ body {
   padding: 15px 0;
   max-width: 440px;
   width: 100%;
+  margin-top: 20px;
 }
 
 li {
@@ -61,11 +66,16 @@ li {
 } 
 
 .main-nav-menu-link {
+  padding-bottom: 10px;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
   font-family: Roboto, PTSans;
   font-size: 16px;
+}
+
+.main-nav-menu-link:hover {
+  border-bottom: 2px solid #fb565a;
 }
 
 .user-block {
@@ -77,11 +87,10 @@ li {
 }
 
 .container .btn-basket {
-  
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   width: 100%;
    font-family: Roboto,sans-serif;
   font-size: 16px;
@@ -89,6 +98,9 @@ li {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+.container .btn-basket:hover {  /*почему кнопка подскакивает при наведении?*/
+  border-bottom: 2px solid #fb565a;
 }
 
 .description {
@@ -199,14 +211,29 @@ li {
 .btn-red {
   background-color: #fb565a;
 }
+.btn-red:hover {
+  background-color: #e74246;
+  cursor: pointer;
+}
 
 .btn-green {
   background-color: #00ca74;
+}
+.btn-green:hover {
+  background-color: #00bc6c;
+  cursor: pointer;
 }
 
 .btn-yellow {
   background-color: #efc84a;
 }
+
+.btn-yellow:hover {
+  background-color: #eab534;
+  cursor: pointer;
+}
+
+
 
 .advantages {
   padding-top: 35px;
@@ -323,11 +350,19 @@ li {
 
 .logos-img-wrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  max-width: 285px;
+  justify-content: center;
   width: 100%;
+  opacity: 0.3;
+  align-items: center;
+ 
+  max-width: 285px;
+ 
+  cursor: pointer;
+}
+.logos-img-wrap:hover {
+  opacity: 100%;
+  transition: 0.385s;
 }
 .logos-img-wrap::after {
   position: absolute;
@@ -408,6 +443,12 @@ li {
   padding: 30px;
   border-radius: 50%;
   background-color: #e1e1e1;
+}
+
+.footer__social-background:hover { /*можно ли сделать так чтобы меняли цвет все три круга сразу? наводя на любой из символ*/
+  background-color: #e74246;
+  transition: 0.385s; /*можно ли сделать так чтобы при убьираннии мыши с ховера цвет менялся обратно постепенно а не мгновенно и обойтись без джса?*/ 
+  
 }
 
 .footer__title {
