@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+h2 {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --main-text: #283136;
 }
@@ -13,9 +16,9 @@
 body {
   margin: 0;
   padding: 0;
-  height: 2476px;
   font-family: Roboto,sans-serif;
   color: black;
+  background: url(/images/preview/nserds-catalog.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -23,6 +26,12 @@ body {
 .hero-wrapper {
   background-color: #eeeeee;
   height: 538px;
+}
+
+.hero-wrapper--catalog {
+  margin-bottom: 60px; 
+  background-color: #eeeeee;
+  height: 355px;
 }
 
 .container {
@@ -58,7 +67,6 @@ body {
   padding: 15px 0;
   max-width: 440px;
   width: 100%;
-  margin-top: 20px;
 }
 
 li {
@@ -86,20 +94,20 @@ li {
   cursor: pointer;
 }
 
-.container .btn-basket {
-  margin-top: 20px;
-  display: flex;
+.container .btn-basket {         
   justify-content: space-between;
   align-items: center;
   width: 100%;
-   font-family: Roboto,sans-serif;
+  font-family: Roboto,sans-serif;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  border: none;
   cursor: pointer;
+  border: none;
+  border-bottom: 2px solid transparent;
 }
-.container .btn-basket:hover {  /*почему кнопка подскакивает при наведении?*/
+
+.container .btn-basket:hover {  
   border-bottom: 2px solid #fb565a;
 }
 
@@ -211,7 +219,7 @@ li {
 .btn-red {
   background-color: #fb565a;
 }
-.btn-red:hover {
+.btn-red:hover,.container-btn:hover {
   background-color: #e74246;
   cursor: pointer;
 }
@@ -445,9 +453,9 @@ li {
   background-color: #e1e1e1;
 }
 
-.footer__social-background:hover { /*можно ли сделать так чтобы меняли цвет все три круга сразу? наводя на любой из символ*/
+.footer__social-background:hover { 
   background-color: #e74246;
-  transition: 0.385s; /*можно ли сделать так чтобы при убьираннии мыши с ховера цвет менялся обратно постепенно а не мгновенно и обойтись без джса?*/ 
+  transition: 0.385s;
   
 }
 
@@ -460,6 +468,306 @@ li {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+.title {
+  margin-top: 71px;
+  text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid darkgreen;
+  margin-bottom: 60px;
+}
+
+.radio {
+  margin-bottom: 50px;
+}
+
+.radio__label {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  color: #283136;
+}
+
+.radio__label:hover {
+  color: #000;
+}
+.radio__label:hover .radio__indicator {
+  border-color: #4d4d4d;
+}
+
+.radio__label:hover .radio__input:checked + .radio__indicator::before  {
+  background-color: #4d4d4d;
+}
+.radio__input {
+  display: none;
+}
+
+.radio__indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #b8b8b8;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__indicator:hover::before {
+  background-color:  #4d4d4d;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.checkbox__label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  color: #283136;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__indicator {
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #b8b8b8;
+  border-radius: 4px;
+}
+
+.checkbox__indicator:hover  {
+  border-color: #4d4d4d;
+}
+
+.checkbox__input:checked + .checkbox__indicator::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  background-color: #b8b8b8;
+  transform: rotate(-45deg);
+  border-radius: 1px;
+  box-shadow: 10px 0px - 1px white;
+}
+
+  .checkbox__input:checked + .checkbox__indicator::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 19px;
+    height: 5px;
+    background-color: #b8b8b8;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    box-shadow: 10px 0px 1px 1px white;
+}
+
+.checkbox__label:hover {
+color: #000;
+}
+
+.checkbox__label:hover  .checkbox__indicator {
+  border-color: #4d4d4d;
+}
+
+.checkbox__label:hover .checkbox__input:checked + .checkbox__indicator::before,
+.checkbox__label:hover .checkbox__input:checked + .checkbox__indicator::after {
+
+  background-color: #4d4d4d;
+}
+
+.form {
+  margin-right: 140px;
+  width: 260px;
+}
+.form__btn {
+  margin-top: 25px; 
+  padding: 16px 90px;  
+}
+
+.btn-secondary {
+  min-width: 260px;
+  padding: 15px; 
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border:none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-secondary:hover,.pagination__link:hover {
+  background-color: #dfdfdf;
+}
+
+.btn-secondary:active, .pagination__link:active{
+  color: #959595;
+  background-color: #d5d5d5;
+  box-shadow:inset 0px 3px 0px 0px #bfbfbf;
+ 
+}
+.product {
+  max-width: 760px;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin-bottom: 60px;
+  max-width: 360px;
+  width: 100%;
+  outline: 1px solid red;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.content-dots {
+  display: flex;
+  padding-left: 16px;
+  background-color: #e9e9e9;
+}
+
+.dots__slider {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-right: 9px;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content:hover .content-dots {
+  background-color: #4d4d4d;
+}
+
+.pagination {
+ display:flex;  
+}
+
+.pagination__link{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  padding: 13px ;
+  margin-right: 10px;   
+  line-height: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  background-color: red;
+  text-transform: uppercase;
+  border-radius: 2px;  
+}
+.pagination__active {
+  background-color: transparent;
+  border: 3px solid #dbdbdb; 
+}
+
+
+
+.range__input {
+-webkit-appearance:none ;
+width: 100%;
+height: 2px;
+background: #00ca74;
+outline: none;
+opacity: 0.6;
+transition: 0.5s;
+
+}
+
+.range__input:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.range__input::-webkit-slider-thumb { 
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #e74246;
+  border: 8px solid white;         /*почему не вставляется картинка */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 1px black;
+} 
+
+/* .range__input[type=range]::-webkit-slider-thumb {
+  box-shadow: 3px 3px 3px #00AA00;
+  border: 8px solid #000;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #439643;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+} */
+/* .range__input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+} */
+
+
+.range__price {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: red;
+  border-radius: 3px;
+  max-width: 80px;
+  width: 100%;
+  text-align: center; /*как оставить текст по центру при максимальном значении импута*/
 }
 
 
