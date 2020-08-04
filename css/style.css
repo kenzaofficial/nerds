@@ -162,6 +162,13 @@ li {
   border-width: 0;
   text-decoration: none;
   color: white;
+  outline: none;
+}
+
+.container-btn:active {
+  color: green;
+  background-color: blue; /*почему не меняется цвет ?????*/
+  box-shadow: inset 0px 2px 3px 0px  black;
 }
 
 .features {
