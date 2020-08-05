@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>catalog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="hero-wrapper--catalog">
+      <header class="main-header">
+        <div class="container">
+          <a class="main-header__logo" href="/index.html"
+            ><img src="./images/nerds-logo.png" alt="nerds-logo"
+          /></a>
+          <nav class="main-nav">
+            <ul class="main-nav-menu">
+              <li><a class="main-nav-menu-link" href="#">Студия</a></li>
+              <li><a class="main-nav-menu-link" href="#">Клиенты</a></li>
+              <li>
+                <a class="main-nav-menu-link" href="/сatalog.html">Магазин</a>
+              </li>
+              <li><a class="main-nav-menu-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <button type="button" class="btn-basket">
+              <img src="/images/cart-icon.png" alt="корзина" />
+              корзина
+            </button>
+          </div>
+        </div>
+      </header>
+        <h1 class="title">Магазин готовых шаблонов</h1>
+    </div>
+    <div class="container">
+      <main class="main">
+          <form class="form" action="POST">
+            <div class="range">
+              <h2 class="subtitle">Cтоимость</h2>
+              <label class="range__label">
+                <div class="input-wrap"><input class="range__input" type="range" name="price" min="0" max="15000" step="10" oninput="fun1()"></div>
+                <p class="range__price"></p>
+              </label>
+            </div>
+          
+            <!--<begunokwrapper?</begunokwrapper>-->
+            <div class="radio">
+              <h2 class="subtitle">Cетка:</h2>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="mesh" />
+                <span class="radio__indicator"></span>Aдаптивная
+              </label>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="mesh" />
+                <span class="radio__indicator"></span>Фиксированная
+              </label>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="mesh" />
+                <span class="radio__indicator"></span>Резиновая
+              </label>
+            </div>
+            <div class="checkbox">
+              <h2 class="subtitle">Особенности:</h2>
+              <label class="checkbox__label">
+                <input class="checkbox__input"type="checkbox"name="slider" >
+                <span class="checkbox__indicator"></span>Слайдер
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input"type="checkbox"name="advantages" >
+                <span class="checkbox__indicator"></span>Блок преимуществ
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input"type="checkbox"name="news" >
+                <span class="checkbox__indicator"></span>Новости
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input"type="checkbox"name="gallery" >
+                <span class="checkbox__indicator"></span>Галлерея
+              </label>    
+              <label class="checkbox__label">
+                <input class="checkbox__input"type="checkbox"name="backet" >
+                <span class="checkbox__indicator"></span>Корзина
+              </label>
+            </div>
+            <button class="btn-secondary form__btn" type="button">Показать</button>
+          </form>
+          <section class="product">
+            <div class="product-filter-wrap">
+              <h2 class="subtitle subtitle--filter">Сортировать:</h2>
+              <div class="product-filter">
+                <span class="product-filter__text product-filter-text__active">По цене</span>
+                <span class="product-filter__text">По типу</span>
+                <span class="product-filter__text">По названию</span>
+                <div class="sort-btn">
+                  <button type="button" class="sort-btn__down"></button>
+                  <button type="button" class="sort-btn__up"></button>
+                </div>
+              </div>
+            </div>
+            <div class="content-wrap">
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                  <div class="content-description">
+                    <h3 class="content-description__title">Sedona</h3>
+                    <p class="content-description__text">Информационный сайт<br>
+                      для туристов</p>
+                      <button class="container-btn">9 000 руб.</button>
+                  </div>
+                <img class="content-img" src="/images/сontent/img-sedona.jpg" alt="kvas">
+              </div>
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                <div class="content-description">
+                  <h3 class="content-description__title">pin app</h3>
+                  <p class="content-description__text">Продуктовый лендинг<br>
+                    приложения для iOS и Android</p>
+                    <button class="container-btn">9 000 руб.</button>
+                </div>
+                <img class="content-img" src="/images/сontent/img-pink.jpg" alt="kvas">
+              </div>
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                <div class="content-description">
+                  <h3 class="content-description__title">barbershop</h3>
+                  <p class="content-description__text">Быстро круто дорого!</p>
+                    <button class="container-btn">9 000 руб.</button>
+                </div>
+                <img class="content-img" src="/images/сontent/img-barbershop.jpg" alt="kvas">
+              </div>
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                <div class="content-description">
+                  <h3 class="content-description__title">Mishka</h3>
+                  <p class="content-description__text">С корзинками Mishka<br>
+                  Вы всегда сможете потратить деньги вникуда!</p>
+                    <button class="container-btn">9 000 руб.</button>
+                </div>
+                <img class="content-img" src="/images/сontent/img-mishka.jpg" alt="kvas">
+              </div>
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                <div class="content-description">
+                  <h3 class="content-description__title">Alpus</h3>
+                  <p class="content-description__text">Начните обучение  за<br>
+                   9 000 рублей всего за один урок прямо сейчас!
+                  Спеши! Места ограничены!</p>
+                    <button class="container-btn">9 000 руб.</button>
+                </div>
+                <img class="content-img" src="/images/сontent/img-aplus.jpg" alt="kvas">
+              </div>
+              <div class="content">
+                <div class="content-dots">
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                  <div class="dots__slider"></div>
+                </div>
+                <div class="content-description">
+                  <h3 class="content-description__title">КВАСТ</h3>
+                  <p class="content-description__text">Прокисший квас<br>
+                    только у нас!
+                  </p>
+                    <button class="container-btn">9 000 руб.</button>
+                </div>
+                <img class="content-img" src="/images/сontent/img-kvast.jpg" alt="kvas">
+              </div>
+            </div>
+            <div class="pagination">
+              <a class="pagination__link pagination__active" href="#">1</a>
+              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link" href="#">3</a>
+              <button class="btn-secondary" type="button">Cледующая 
+              </button>
+            </div>
+          </section> 
+      </main>
+    </div>
+    <div class="map">
+      <div class="container">
+        <div class="contacts">
+          <b class="text-bold">nёrds design studio</b>
+          <p>
+            <a class="adress-link" href="#">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+          </p>
+          <p class="contacts-tel">Тел.+7 (812) 275-75-75 </p>
+            <a class="container-btn container-btn-flex" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__flex">
+          <div class="footer__social">
+            <a class="footer__social-background" href="#"><img src="./images/social-wk.png"></a> 
+            <a class="footer__social-background" href="#"><img src="./images/social-fb.png"></a>
+            <a class="footer__social-background" href="#"><img src="./images/social-instagram.png"></a>
+          </div>
+          <div class="footer__title">Давайте дружить, это выгодно!
+            <p class="footer__subtitle">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div> 
+      </div>    
+    </footer>
+  </body>
+  <script src="./Javascript/Javascript.js"></script>
+</html>

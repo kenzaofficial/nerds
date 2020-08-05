@@ -14,22 +14,22 @@
     <div class="hero-wrapper">
       <header class="main-header">
         <div class="container">
-          <img src="./images/nerds-logo.png" alt="nerds-logo" />
+          <a class="main-header__logo" href="#"><img src="./images/nerds-logo.png" alt="nerds-logo" /></a>
           <nav class="main-nav">
             <ul class="main-nav-menu">
               <li><a class="main-nav-menu-link" href="#">Студия</a></li>
               <li><a class="main-nav-menu-link" href="#">Клиенты</a></li>
-              <li><a class="main-nav-menu-link" href="#">Магазин</a></li>
+              <li><a class="main-nav-menu-link" href="/сatalog.html">Магазин</a></li>
               <li><a class="main-nav-menu-link" href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="user-block">
             <button type="button" class="btn-basket">
-              <span> <img src="/images/cart-icon.png" alt="корзина" /></span>
-              <span> корзина</span>
+               <img src="/images/cart-icon.png" alt="корзина" />
+               корзина
             </button>
           </div>
-        </div>
+        </div> 
       </header>
       <div class="container">
         <div class="description">
@@ -188,19 +188,18 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-social">
-            <div class="footer-social-background footer-social-wk"> <a href="#"><img src="./images/social-wk.png"></a></div> <!--обязательно ли прописывать footer-social-wk,fb,inst классы если я их в цсс никак не использую?-->
-            <div class="footer-social-background footer-social-fb"> <a href="#"><img src="./images/social-fb.png"></a></div>
-            <div class="footer-social-background footer-social-instagram"> <a href="#"><img src="./images/social-instagram.png"></a></div>
+    <footer class="footer">
+      <div class="container footer__flex">
+          <div class="footer__social">
+            <a class="footer__social-background" href="#"><img src="./images/social-wk.png"></a> 
+            <a class="footer__social-background" href="#"><img src="./images/social-fb.png"></a>
+            <a class="footer__social-background" href="#"><img src="./images/social-instagram.png"></a>
           </div>
-          <div class="footer-title">Давайте дружить, это выгодно!
-            <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+          <div class="footer__title">Давайте дружить, это выгодно!
+            <p class="footer__subtitle">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div> 
       </div>    
-    </div>
+    </footer>
   </body>
 </html>
