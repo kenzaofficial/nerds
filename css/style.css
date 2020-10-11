@@ -16,7 +16,7 @@ h2 {
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   color: black;
   background: url(/images/preview/nserds-catalog.jpg);
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
 }
 
 .hero-wrapper--catalog {
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
   background-color: #eeeeee;
   height: 355px;
 }
@@ -37,7 +37,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1180px;
-  width:100%;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -71,7 +71,7 @@ body {
 
 li {
   list-style-type: none;
-} 
+}
 
 .main-nav-menu-link {
   padding-bottom: 10px;
@@ -94,11 +94,11 @@ li {
   cursor: pointer;
 }
 
-.container .btn-basket {         
+.container .btn-basket {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ li {
   border-bottom: 2px solid transparent;
 }
 
-.container .btn-basket:hover {  
+.container .btn-basket:hover {
   border-bottom: 2px solid #fb565a;
 }
 
@@ -168,7 +168,7 @@ li {
 .container-btn:active {
   color: green;
   background-color: blue; /*почему не меняется цвет ?????*/
-  box-shadow: inset 0px 2px 3px 0px  black;
+  box-shadow: inset 0px 2px 3px 0px black;
 }
 
 .features {
@@ -227,7 +227,8 @@ li {
 .btn-red {
   background-color: #fb565a;
 }
-.btn-red:hover,.container-btn:hover {
+.btn-red:hover,
+.container-btn:hover {
   background-color: #e74246;
   cursor: pointer;
 }
@@ -248,8 +249,6 @@ li {
   background-color: #eab534;
   cursor: pointer;
 }
-
-
 
 .advantages {
   padding-top: 35px;
@@ -371,9 +370,9 @@ li {
   width: 100%;
   opacity: 0.3;
   align-items: center;
- 
+
   max-width: 285px;
- 
+
   cursor: pointer;
 }
 .logos-img-wrap:hover {
@@ -420,7 +419,7 @@ li {
   line-height: 24px;
   text-transform: uppercase;
 }
-.contacts .adress-link  {
+.contacts .adress-link {
   text-decoration: none;
   color: #666666;
 }
@@ -440,14 +439,13 @@ li {
 }
 .footer__flex {
   display: flex;
-} 
+}
 .footer__social {
   display: flex;
   justify-content: space-between;
   max-width: 260px;
   width: 100%;
   margin-right: 140px;
- 
 }
 
 .footer__social-background {
@@ -461,10 +459,9 @@ li {
   background-color: #e1e1e1;
 }
 
-.footer__social-background:hover { 
+.footer__social-background:hover {
   background-color: #e74246;
   transition: 0.385s;
-  
 }
 
 .footer__title {
@@ -472,7 +469,6 @@ li {
 }
 
 .footer__subtitle {
-
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -514,7 +510,7 @@ li {
   border-color: #4d4d4d;
 }
 
-.radio__label:hover .radio__input:checked + .radio__indicator::before  {
+.radio__label:hover .radio__input:checked + .radio__indicator::before {
   background-color: #4d4d4d;
 }
 .radio__input {
@@ -543,7 +539,7 @@ li {
 }
 
 .radio__input:checked + .radio__indicator:hover::before {
-  background-color:  #4d4d4d;
+  background-color: #4d4d4d;
 }
 
 .subtitle {
@@ -574,7 +570,7 @@ li {
   border-radius: 4px;
 }
 
-.checkbox__indicator:hover  {
+.checkbox__indicator:hover {
   border-color: #4d4d4d;
 }
 
@@ -591,30 +587,29 @@ li {
   box-shadow: 10px 0px - 1px white;
 }
 
-  .checkbox__input:checked + .checkbox__indicator::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 6px;
-    width: 19px;
-    height: 5px;
-    background-color: #b8b8b8;
-    border-radius: 1px;
-    transform: rotate(-45deg);
-    box-shadow: 10px 0px 1px 1px white;
+.checkbox__input:checked + .checkbox__indicator::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 19px;
+  height: 5px;
+  background-color: #b8b8b8;
+  border-radius: 1px;
+  transform: rotate(-45deg);
+  box-shadow: 10px 0px 1px 1px white;
 }
 
 .checkbox__label:hover {
-color: #000;
+  color: #000;
 }
 
-.checkbox__label:hover  .checkbox__indicator {
+.checkbox__label:hover .checkbox__indicator {
   border-color: #4d4d4d;
 }
 
 .checkbox__label:hover .checkbox__input:checked + .checkbox__indicator::before,
 .checkbox__label:hover .checkbox__input:checked + .checkbox__indicator::after {
-
   background-color: #4d4d4d;
 }
 
@@ -623,38 +618,38 @@ color: #000;
   width: 260px;
 }
 .form__btn {
-  margin-top: 25px; 
-  padding: 16px 90px;  
+  margin-top: 25px;
+  padding: 16px 90px;
 }
 
 .btn-secondary {
   min-width: 260px;
-  padding: 15px; 
+  padding: 15px;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: #eeeeee;
-  border:none;
+  border: none;
   border-radius: 2px;
   cursor: pointer;
   outline: none;
 }
 
-.btn-secondary:hover,.pagination__link:hover {
+.btn-secondary:hover,
+.pagination__link:hover {
   background-color: #dfdfdf;
 }
 
-.btn-secondary:active, .pagination__link:active{
+.btn-secondary:active,
+.pagination__link:active {
   color: #959595;
   background-color: #d5d5d5;
-  box-shadow:inset 0px 3px 0px 0px #bfbfbf;
- 
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
 }
 .product {
   max-width: 760px;
   width: 100%;
- 
 }
 
 .product-filter-wrap {
@@ -664,7 +659,7 @@ color: #000;
   margin-bottom: 55px;
 }
 
-.subtitle--filter{
+.subtitle--filter {
   margin: 0;
 }
 
@@ -685,8 +680,8 @@ color: #000;
   cursor: pointer;
 }
 
-.product-filter__text:hover{
-  color:#666666;
+.product-filter__text:hover {
+  color: #666666;
 }
 
 .product-filter__text:active {
@@ -694,7 +689,8 @@ color: #000;
 }
 
 .product-filter-text__active {
-  color: #000;}
+  color: #000;
+}
 
 .sort-btn {
   display: flex;
@@ -704,7 +700,8 @@ color: #000;
   width: 100%;
 }
 
-.sort-btn__down,.sort-btn__up {
+.sort-btn__down,
+.sort-btn__up {
   position: relative;
   cursor: pointer;
   border: none;
@@ -712,26 +709,28 @@ color: #000;
   background-color: transparent;
 }
 
-.sort-btn__down::before {  /*делал на глаз */
+.sort-btn__down::before {
+  /*делал на глаз */
   position: absolute;
-  content:"";
-  left: 0px; 
-  bottom: -5px; 
-  border: 5px solid transparent; 
-  border-top: 10px solid #d2d2d2; 
+  content: "";
+  left: 0px;
+  bottom: -5px;
+  border: 5px solid transparent;
+  border-top: 10px solid #d2d2d2;
 }
 
 .sort-btn__up::before {
   position: absolute;
-  content:"";
-  left: 0px; 
-  bottom: 1px; 
-  border: 5px solid transparent; 
-  border-top: 10px solid #d2d2d2; 
+  content: "";
+  left: 0px;
+  bottom: 1px;
+  border: 5px solid transparent;
+  border-top: 10px solid #d2d2d2;
   transform: rotate(180deg);
 }
 
-.sort-btn__up:hover:before,.sort-btn__down:hover::before{
+.sort-btn__up:hover:before,
+.sort-btn__down:hover::before {
   border-top: 10px solid #666666;
 }
 
@@ -770,61 +769,62 @@ color: #000;
   background-color: #4d4d4d;
 }
 
-.content-description{
+.content-description {
   height: 230px;
   background-color: #eeeeee;
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
-  opacity: 0;  /*подходит ли опасити ради плавного перехода
+  opacity: 0; /*подходит ли опасити ради плавного перехода
   ведь через display none нельзя сделать плаввный переход? 
   а при опасити 
-  0 юзер может случайно нажать на кнопку купитиь?*/  
- transition: 1.0s;
+  0 юзер может случайно нажать на кнопку купитиь?*/
+  transition: 1s;
 }
 
-.content:hover .content-description{
+.content:hover .content-description {
   text-align: center;
   opacity: 1;
   transition: 0.5s;
 }
 
- .content-description__title {
+.content-description__title {
   margin-top: 30px;
   text-transform: uppercase;
 }
 
-.content-description__text{
-  padding:5px;
+.content-description__text {
+  padding: 5px;
   margin-bottom: 30px;
   color: #666666;
 }
 .pagination {
- display:flex;  
+  display: flex;
 }
 
-.pagination__link{ 
+.pagination__link {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 50px;
-  padding: 13px ;
-  margin-right: 10px;   
+  padding: 13px;
+  margin-right: 10px;
   line-height: 18px;
   font-weight: 500;
   color: #000;
   text-decoration: none;
   background-color: #eeeeee;
   text-transform: uppercase;
-  border-radius: 2px;  
+  border-radius: 2px;
 }
 .pagination__active {
   background-color: transparent;
-  border: 3px solid #dbdbdb; 
+  border: 3px solid #dbdbdb;
 }
 
-.range {border:1px solid red;
+.range {
+  border: 1px solid red;
 }
 
 .range__label {
@@ -840,13 +840,13 @@ color: #000;
 }
 
 .range__input {
--webkit-appearance:none ;
-width: 100%;
-height: 2px;
-background: #00ca74;
-outline: none;
-opacity: 0.6;
-transition: 0.5s;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #00ca74;
+  outline: none;
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 .range__input:hover {
@@ -854,18 +854,18 @@ transition: 0.5s;
   transition: 0.4s;
 }
 
-.range__input::-webkit-slider-thumb { 
+.range__input::-webkit-slider-thumb {
   position: relative;
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
   height: 20px;
   background-color: #e74246;
-  border: 8px solid white;         
+  border: 8px solid white;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 2px 4px 1px black;
-} 
+}
 
 .range__price {
   display: inline-block;
@@ -874,8 +874,6 @@ transition: 0.5s;
   border-radius: 3px;
   max-width: 80px;
   width: 100%;
-  text-align: center; 
-  border: 1px solid blue;  /*начинает скакать вся колонка когда я начинаю двигать ползунок*/
+  text-align: center;
+  border: 1px solid blue; /*начинает скакать вся колонка когда я начинаю двигать ползунок*/
 }
-
-
